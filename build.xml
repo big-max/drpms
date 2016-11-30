@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="tws-web" default="makeWar" basedir=".">
+
+	<property name="src" value="src" />
+	<property name="target" value="target" />
+	<property name="webRoot" value="WebRoot" />
+	<property name="webInf" value="WEB-INF" />
+	<property name="buildHome" value="build" />
+	<property name="classes" value="WEB-INF/classes" />
+	<property name="config" value="WEB-INF/classes/config" />
+	<property name="lib" value="WEB-INF/lib" />
+	<property name="jsp" value="home" />
+	<property name="css" value="css" />
+	<property name="img" value="img" />
+	<property name="upload" value="upload" />
+	<property name="js" value="js" />
+
+
+	<!-- 指定环境变量参数为:SystemVariable -->
+	<property environment="SystemVariable" />
+	<!-- 将tomcat.home指向环境变量TOMCAT_HOME指向的路径 -->
+	<property name="tomcat.home" value="${SystemVariable.TOMCAT_HOME}" />
+
+	<!-- 删除build路径-->
+	<target name="clean">
+		<delete dir="buildHome" />
+	</target>
+
+	<target name="init" depends="clean">
+		<mkdir dir="${buildHome}" />
+		<mkdir dir="${target}" />
+		<mkdir dir="${buildHome}/${webInf}" />
+		<mkdir dir="${buildHome}/${lib}" />
+		<mkdir dir="${buildHome}/${jsp}" />
+		<mkdir dir="${buildHome}/${classes}" />
+		<mkdir dir="${buildHome}/${config}" />
+		<mkdir dir="${buildHome}/${css}" />
+		<mkdir dir="${buildHome}/${img}" />
+		<mkdir dir="${buildHome}/${upload}" />
+		<mkdir dir="${buildHome}/${js}" />
+	</target>
+
+	<target name="build" depends="init">
+		<!-- 拷贝 css -->
+		<copy todir="${buildHome}/${css}">
+			<fileset dir="${webRoot}/${css}">
+				<include name="**/*.css" />
+			</fileset>
+		</copy>
+		<!-- 拷贝jsp文件到build/home目录下 -->
+		<copy todir="${buildHome}/${jsp}">
+			<fileset dir="${webRoot}/${jsp}">
+				<include name="**/*.jsp" />
+				<include name="**/*.html" />
+			</fileset>
+		</copy>
+
+		<!-- 拷贝 images -->
+		<copy todir="${buildHome}/${images}">
+			<fileset dir="${webRoot}/${images}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+
+		<!-- 拷贝 upload -->
+		<copy todir="${buildHome}/${upload}">
+			<fileset dir="${webRoot}/${upload}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<!-- 拷贝 js -->
+		<copy todir="${buildHome}/${js}">
+			<fileset dir="${webRoot}/${js}">
+				<include name="**/*.js" />
+				<include name="**/*.css" />
+				<include name="**/*.png" />
+				<include name="**/*.gif" />
+				<include name="**/*.jpg" />
+				<include name="**/*.map" />
+			</fileset>
+		</copy>
+
+		<!-- 拷贝 当前目录下的文件 -->
+		<copy todir="${buildHome}">
+			<fileset dir="${webRoot}">
+				<include name="*.jsp" />
+			</fileset>
+		</copy>
+
+		<!-- 拷贝jar包到lib目录下 -->
+		<copy todir="${buildHome}/${lib}">
+			<fileset dir="${webRoot}/${lib}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+
+		<!-- WEB-INF下配置文件拷贝到-->
+		<copy todir="${buildHome}/${webInf}">
+			<fileset dir="${webRoot}/${webInf}">
+				<include name="web.xml" />
+			</fileset>
+		</copy>
+
+		<!-- 配置文件拷贝到 classes根目录下 -->
+		<copy todir="${buildHome}/${config}">
+			<fileset dir="${src}/config">
+				<include name="**/*.properties" />
+				<include name="**/*.xml" />
+				<include name="*.key" />
+			</fileset>
+		</copy>
+
+		<!-- ******  -->
+		<path id="lib">
+			<fileset dir="${buildHome}/${lib}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+
+		<!-- 拷贝 mapper下的xml文件 -->
+		<copy todir="${buildHome}/${classes}">
+			<fileset dir="${src}">
+				<include name="**/*.xml" />
+			</fileset>
+		</copy>
+
+		<!-- 编译 -->
+		<javac srcdir="${src}" destdir="${buildHome}/${classes}" encoding="UTF-8">
+			<classpath refid="lib">
+			</classpath>
+		</javac>
+
+	</target>
+
+	<!-- 打war包-->
+	<target name="makeWar" depends="build">
+		<war destfile="${target}/TCloudApp.war" webxml="${buildHome}/${webInf}/web.xml">
+			<fileset dir="${buildHome}" includes="**/*.*" />
+		</war>
+	</target>
+</project>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-lazy-init="true">
+	<!-- 启动触发器的配置开始 -->
+	<bean name="startQuertz"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="saveJobTrigger" />
+				<ref bean="deleteJobTrigger" />
+			</list>
+		</property>
+
+		<property name="jobFactory">
+			<bean class="com.ibm.smartcloud.core.util.MyJobFactory" />
+		</property>
+
+	</bean>
+
+
+	<!-- 启动触发器的配置结束 -->
+
+	<!-- 调度的配置开始 -->
+	<!-- quartz-2.x的配置 -->
+	<bean id="testJobTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="myJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<value>0/5 * * * * ?</value>
+		</property>
+	</bean>
+	<!-- 调度的配置结束 -->
+
+	<!-- job的配置开始 -->
+	<bean id="myJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="myJob" />
+		</property>
+		<property name="targetMethod">
+			<value>execute</value>
+		</property>
+	</bean>
+	<!-- job的配置结束 -->
+
+	<!-- 工作的bean -->
+
+	<bean id="myJob" class="com.ibm.tws.quartzJob.TestJob" />
+
+
+	<!-- 调度的配置开始 -->
+	<!-- quartz-2.x的配置 -->
+	<bean id="deleteJobTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="deleteJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<!-- 每天的0点、13点、18点、21点都执行一次：0 0 0,13,18,21 * * ? -->
+			<!-- 0 1 * * * ? 每隔1个小时  -->
+			<value>0 0/59 * * * ?</value>  <!-- 秒时分  0 50 16 * * ? -->
+		</property>
+	</bean>
+	<!-- 调度的配置结束 -->
+
+	<!-- job的配置开始 -->
+	<bean id="deleteJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="deleteJob" />
+		</property>
+		<property name="targetMethod">
+			<value>execute</value>
+		</property>
+	</bean>
+	<!-- job的配置结束 -->
+
+	<!-- 工作的bean -->
+
+	<bean id="deleteJob" class="com.ibm.tws.quartzJob.DeleteHistoryRecordJob" >
+		<property name="jobService" ref="jobService" />
+		<property name="historyJobService" ref="historyJobService" />
+
+	</bean>
+
+	<!-- 调度的配置开始 -->
+	<!-- quartz-2.x的配置 -->
+	<bean id="saveJobTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="saveJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<!-- 每隔30秒执行一次：*/30 * * * * ? -->
+			<value>0 0/3 * * * ?</value><!-- 五分钟执行一次  0 0/5 * * * ?-->
+		</property>
+	</bean>
+	<!-- 调度的配置结束 -->
+
+	<!-- job的配置开始 -->
+	<bean id="saveJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="saveJob" />
+		</property>
+		<property name="targetMethod">
+			<value>execute</value>
+		</property>
+
+
+	</bean>
+	<!-- job的配置结束 -->
+
+	<!-- 工作的bean -->
+
+	<bean id="saveJob" class="com.ibm.tws.quartzJob.SaveHistoryRecordJob">
+		<property name="jobService" ref="jobService" />
+		<property name="historyJobService" ref="historyJobService" />
+
+	</bean>
+	
+
+	<bean id="jobService" class="com.ibm.tws.service.impl.JobServiceImpl">
+
+	</bean>
+	<bean id="historyJobService" class="com.ibm.tws.service.impl.HistoryJobServiceImpl">
+
+	</bean>
+
+</beans>
+
