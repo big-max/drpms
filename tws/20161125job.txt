@@ -1,0 +1,4290 @@
+$JOBS
+DA1#ATMP业务验证
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}XDxfLoBpUvHPIJiDeOPxJyvOO4CN3VbrKONylRL7q5w=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "ATMP业务验证"
+ RECOVERY STOP
+
+
+DA1#DA_TEST1
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>date > /tmp/date.out</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>localhost</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}AcJe0rowq1NEYVnybN910FfO5jllbLmhZhX0Z6MlJlY=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#I主机检查_周猛军陈天舒30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 70</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}umlLCTmpfwoQmNoT5ojYyOSUcFR4QFWQbOwopBvF/8M=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "i主机检查"
+ RECOVERY STOP
+
+
+DA1#PC服务器检查_钱小强曹冬冬30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 70</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}OMdrIqfr0SsZdu+iwjDd4bXby5t4mmQ6HIV7E45w+ok=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "PC服务器检查"
+ RECOVERY STOP
+
+
+DA1#TAST1
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}LgEr8jy+zTYbUf1o2DBP9yOS/qyHM0A7vAjuhLZ5130=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#TAST11
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}9G4eRrTwSAL6uqMkWN+3u7Pq+w2bsW7kKNRMnKzsKiM=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#TAST12
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}IiwFMn8f1qGiuylE4s1KDbTbJab3y72C5p6aakdVJaA=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#TAST13
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}wmflOsq3FSmPVExa2jl6YTXueQkHP6vNo1/NHqNZ2FQ=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#TAST134
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}DMjzKm4iINt+pxKpFZHsSG8Ot7y30+ItQS+Gptw4W4k=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#TEST_DA1
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>date > /tmp/date_da.out</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>twsuser</jsdl:userName>
+      <jsdl:password>{aes}39FxqpHY3taurBOivS6K78l4sJRoVW/e+q/qO7Iq+pQ=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "已由 composer 添加。"
+ RECOVERY STOP
+
+
+DA1#主机及存储健康检查_周猛军30M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#信贷关帐
+ DOCOMMAND "sleep 610"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停多媒体自助终端_戴鸣10M
+ DOCOMMAND "sleep 610"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停多媒体自助终端_许旭10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停无线固话POS_刘军10M
+ DOCOMMAND "sleep 600"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停止交易路由2ZB_刘军桑晓东10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}0LwI/dzSntqUTZYG+pawSHN6J86ev8YuXeVm87ATTwg=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "停止交易路由2.0灾备应用"
+ RECOVERY STOP
+
+
+DA1#停止加密平台ZB_刘军桑晓东10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}woEaQ4LpT1EAhaqRPFCa/tIeGUUEfojG0IcWVzV7c5E=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "停止加密平台灾备应用"
+ RECOVERY STOP
+
+
+DA1#停止新信贷ZB_吴俊丰胡鹏10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}Mce/5BMpPfXd3Pe2OWP+8nGjY1ePtSYd/7AnzqNFFMU=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "停止新信贷灾备应用"
+ RECOVERY STOP
+
+
+DA1#停止柜面前置灾备_刘军15M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}TWUXDMqBcszYDeSBwLJ7hS1Ep0d/hQr8En/JWRRk/c8=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "停止柜面前置灾备应用"
+ RECOVERY STOP
+
+
+DA1#停止核心灾备应用_刘军15M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}81TPgXNrj3GWA2fxyvAGrwkis4+TtftcCGnwpECG/vU=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "停止核心灾备应用"
+ RECOVERY STOP
+
+
+DA1#停止灾备指纹登录应用_胡鹏15M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停止灾备柜面前置应用_刘军15M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停止灾备核心应用_桑晓东15M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停生产ATMP应用_桑晓东10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#停生产指纹登录应用_胡鹏10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#关键
+ DOCOMMAND "sleep 200"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#准备停止生产应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}wDntF87ECRNtq1M36eMDaLfSM8PAE2tp7txp5eoGNMg=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "准备停止生产应用"
+ RECOVERY STOP
+
+
+DA1#切断生产广域网_张振华10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#切断生产广域网_王军10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#加载前置10存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.151</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}y14lRFCdwS4oF5Y5+x/Op9XUQSYMxFrUHk2Dq3YmaYY=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#加载前置1存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.164</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}B9zJe6qnmil6Yvz9geCDn5yAXUzh5/005MjipeufRh0=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#加载前置4存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.88</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}CtvqoTIiPOtyRe/l4F5H3QtbGXDMu0u2hLxPQzwW/2A=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#加载前置5存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.65</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}IuLYQyyQtXZiNIRt+1M0AfB+PmXUjf/gFh7BR5X0cHs=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#加载前置7存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.140</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}0F1SKh+HrWr3XC/gRRxJiG/gDppbnVNVsLQXz6iDy6g=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#加载前置8存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.141</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}ELywEn16il7wtsVnKeYisfMIZXsz2hi7lV0v8RVgHpk=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#加载前置9存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>/home/test_mount.sh</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.150</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}HbZU8x1Qx/tjO1R/FSawmf85Q+ZYoowVUFGEgva0E5s=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "加载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载新信贷CC_曹畅丁健10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}c4SVHd1eD3MzZwqK+uU8FU3m2NoQ/ofmXcAggX+ILQM=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载新信贷存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录10存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录1存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录4存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录5存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录7存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录8存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录9存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pQJ1HrjGE/fkQ/M76pXkhmpzKxYKz19KWZhjJZT1HVw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备指纹登录存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}IcPjP4nxuyD+o6i8BwRimv7FjwkjxzslIc5CkeGxhso=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置10存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}GOJKqc62RshVmlSytaY6YFfeGSwUrpo1sDF0Y7ArnDU=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置1存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}4rJO83pFl9ZqWqyxWfWyfmU2nYJ51jY075PiQKaaFFE=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置4存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}c6beCU9qBitCo11thglINxkiEiQtvbqlI5qIKyidpLA=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置5存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}Up6McpDym10o6NkW0OfFfDXsr+FzU2NwVQJCxfigD/8=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置7存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}hEjhduYf75xOhuhTWU5RDhMHAYlg4S99XeI/pov+uWg=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置8存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}wx2RR8ICVMDf9KU1g1jnKHzW00esARkhLCVCX2xDxQk=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置9存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}CFyueGM8c6LoOJQAPfpsifQHXZlg0Z391ybtXLW4PjY=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#卸载灾备柜面前置存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}sZMyKSl54D3k1YMP3XC6c4mn6xHAmIH6uqimSbNzsoQ=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "卸载柜面前置存储盘"
+ RECOVERY STOP
+
+
+DA1#发布核心地址_周猛军10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}qWI4gMfKAyNKrZK57REXipmkeCZt94DCO924f3Htncc=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "发布核心地址"
+ RECOVERY STOP
+
+
+DA1#发布灾备核心服务IP_周猛军10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动3G_王军5M
+ DOCOMMAND "sleep 5"
+ STREAMLOGON twsuser
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动ATMP生产_刘军10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}SaYLNsQDiIK1W+Hq+/l68dv/iCtb5ajlYvfkkBXBCms=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动ATMP生产应用并验证"
+ RECOVERY STOP
+
+
+DA1#启动POS生产_刘军10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}apptmg2azEJ6sn6UbeOFNm6N3KQBSzYyQsj03ln6nUA=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动无线固话POS生产应用并验证"
+ RECOVERY STOP
+
+
+DA1#启动交易路由2ZB_刘军桑晓东30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}B98fu3R58MUlTUTXciFkVsyprqGXtPJ6z6T9ng22VP4=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动交易路由2.0灾备应用"
+ RECOVERY STOP
+
+
+DA1#启动分中心应用_戴鸣许旭10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}BEPoLfXf4h+hNiiiBtnmgvQSaSBIUm5M0y5HROvJT54=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动分中心应用"
+ RECOVERY STOP
+
+
+DA1#启动加密平台ZB_刘军桑晓东30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}ASOJASF0ahbwI8JkQTug2ASsIHKgArPxbiCF5BKR4hw=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动加密平台灾备应用"
+ RECOVERY STOP
+
+
+DA1#启动新信贷ZB_吴俊丰胡鹏30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}U9OaT6AjoC0IzItB0lOYhAecOHEWAMK1IrA2BULYyN4=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动新信贷灾备应用"
+ RECOVERY STOP
+
+
+DA1#启动新信贷生产_吴俊丰胡鹏10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}wUes9WAAtW4/cO4vZyRQNYXWgkf3IcfS1yTKH/3Mjpc=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动新信贷生产应用并验证"
+ RECOVERY STOP
+
+
+DA1#启动核心ZB_刘军桑晓东20M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}xCjzMZDGKU1NcwMNU1aPnSdKglg8YGOr26rRO41HgyE=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动核心灾备应用"
+ RECOVERY STOP
+
+
+DA1#启动灾备指纹登录应用_胡鹏20M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动灾备柜面前置应用_刘军20M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动灾备核心应用_桑晓东20M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动生产ATMP应用_桑晓东10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动生产指纹登录应用_胡鹏10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动生产柜面前置应用_刘军10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动生产自助终端应用_戴鸣10M
+ DOCOMMAND "sleep 610"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动生产自助终端应用_许旭10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#启动自助终端生产_许旭10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}apptmg2azEJ6sn6UbeOFNm6N3KQBSzYyQsj03ln6nUA=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "启动自助终端生产应用并验证"
+ RECOVERY STOP
+
+
+DA1#备份交易路由2ZB_刘军桑晓东10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}DhxwvT1+1vzopKJ6yRTQgWYj1L1xFCQPBxwPLth4mq0=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "备份交易路由2.0灾备数据"
+ RECOVERY STOP
+
+
+DA1#备份加密平台ZB_刘军桑晓东10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}bE8vHBY/UnF27dVifbol0l3xDEWrpsd0B2J6SRibvE8=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "备份加密平台灾备数据"
+ RECOVERY STOP
+
+
+DA1#备份新信贷ZB_吴俊丰胡鹏10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}Pcauqw51mJB6X4bifb6eZWd6QFJeeWUgTSpEgjYUz54=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "备份新信贷灾备数据"
+ RECOVERY STOP
+
+
+DA1#备份柜面前置灾备数据_刘军10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}61FAWBLYR9kZkrUxc3zbUejsPwy2nWWqoOikw7W3Z9E=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "备份柜面前置灾备数据"
+ RECOVERY STOP
+
+
+DA1#备份核心灾备数据_刘军10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}he9EQ6hA2j3nxo0pk6RafLSTj/XmmsdaSQbFH4BNrZ4=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "备份核心灾备数据"
+ RECOVERY STOP
+
+
+DA1#备份灾备指纹数据_胡鹏10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#备份灾备柜面前置数据_刘军10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#备份灾备核心数据_桑晓东10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#存储及复制健康检查_钱小强30M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#完成停止灾备应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}B5wNzoP3SLDsPdAmTQ5HqUIBkVAHy7r+CkdERc4VDsE=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始停止灾备应用"
+ RECOVERY STOP
+
+
+DA1#完成停止生产应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}hEP73jSOOcmDn+9/3csYoCI4/d6zTPnMZtj2JC2y8Yg=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始停止生产应用"
+ RECOVERY STOP
+
+
+DA1#完成卸载并人工核查_钱小强5M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#完成启动灾备应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}Dr/l34anaUlZVqYNWSW8YWc5cN4rnK9MJr5RrLB8l6k=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始启动灾备应用"
+ RECOVERY STOP
+
+
+DA1#完成启动生产应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}fTByzBAWYmY2JYhV2kBUf1dGFvxLuIe+Dn0/KJqJI1U=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始启动生产应用"
+ RECOVERY STOP
+
+
+DA1#完成备份灾备系统数据
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}f21EU9BKyVQKvACEY90dXQGVhIA7QRIivRkAzqSz09Q=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始备份灾备系统数据"
+ RECOVERY STOP
+
+
+DA1#完成恢复存储复制
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}kgfTZylT04hwNZ43n0j+rTC3LPDe6BHsjVCisfAErH0=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始恢复存储复制"
+ RECOVERY STOP
+
+
+DA1#完成挂载存储盘
+ DOCOMMAND "sleep 5"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#完成挂载并人工核查_钱小强5M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#完成挂载灾备存储盘
+ DOCOMMAND "sleep 5"
+ STREAMLOGON root
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#完成暂停存储复制
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}waDv0AqP7LTdB6s/p+dzckGjPVxSwYjoCnZt5kvctp8=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始暂停存储复制"
+ RECOVERY STOP
+
+
+DA1#完成检查工作
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}eXW9vmNoHodykqCQzY5sBNwBYKFGtwVactvorBG8Z+M=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "准备短信通知灾备切换"
+ RECOVERY STOP
+
+
+DA1#小型机检查_曹畅丁健30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 70</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}Sxipn0QLtzq+ImiDKv4YAibWXuHliQopApPjfcrZ1/A=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "小型机检查"
+ RECOVERY STOP
+
+
+DA1#开始业务验证_高艳15M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}4UsoF0LvkuD1ElizhmIXUVXQhZ1PhKciB9Ex4LW10aI=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始业务验证"
+ RECOVERY STOP
+
+
+DA1#开始业务验证_龚本清15M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}YpL3I8Fjo3+0X0CFGnPwRuAGWg9zdvii5N3ZEU3S7j8=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始业务验证"
+ RECOVERY STOP
+
+
+DA1#开始停止灾备应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}64xrCSIrWruCJ+aGGa3b4GdixM2olavyYzf2H2GgmZA=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始停止灾备应用"
+ RECOVERY STOP
+
+
+DA1#开始停止生产应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.30</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}k9+Ba+pLD9+d67By6jpLWT0tKqwKFsgRcS99skgcxcE=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始停止生产应用"
+ RECOVERY STOP
+
+
+DA1#开始卸载灾备系统存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}QxWJcYzzkGiReimpyVN1amB+rV7259Y83efeyUQkVX0=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始卸载灾备系统存储盘"
+ RECOVERY STOP
+
+
+DA1#开始启动灾备应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}IlJJuahBppf5ZcT/LIFXQW6aMBd4XDPwlW6KUdWU+10=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始启动灾备应用"
+ RECOVERY STOP
+
+
+DA1#开始启动生产应用
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}mDcKc68VNX8hY12kxhnxqhcS/XvpazdQO5iECQRU+rk=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始启动生产应用并验证"
+ RECOVERY STOP
+
+
+DA1#开始备份灾备系统数据
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}dyZs2Jvs0x2/tr3zQrtQ2PrJyAASWMwKsfF4hPUmkTg=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始备份灾备系统数据"
+ RECOVERY STOP
+
+
+DA1#开始恢复存储复制
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}dEYmEfuYMmrm4Hlpmn4J+Hwi0XTLvBFKTNwkk8hBEEk=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始恢复存储复制"
+ RECOVERY STOP
+
+
+DA1#开始挂载存储盘
+ DOCOMMAND "sleep 5"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#开始挂载灾备存储盘
+ DOCOMMAND "sleep 5"
+ STREAMLOGON root
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#开始暂停存储复制
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 1</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}fZrZPvOjn30SYBvOuqca8WcORe2EaW1R2gliFhFp4xY=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始暂停存储复制"
+ RECOVERY STOP
+
+
+DA1#开始灾备系统挂载存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}WRXUxjmznNxSVlWjp40OzozFmjdGdRy8dM+d6gqCkuU=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "开始灾备系统挂载存储盘"
+ RECOVERY STOP
+
+
+DA1#恢复指纹存储复制_钱小强10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#恢复新信贷CC_周猛军陈天舒20M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}HPQLzjNcXEeZxqF6U9ygATSsXPfpjbn4/7JDTzPL7Tc=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "恢复新信贷存储"
+ RECOVERY STOP
+
+
+DA1#恢复柜面存储复制_钱小强10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#恢复核心存储复制_周猛军10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置10存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}rpV/mALkJ8U88uPYOiRf59MV5wgWzp4eJaAWGMzSneE=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置1存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}HDtCkZY/uCsweCpFEQRtxbhq49EEHRlevdaMT55xLhw=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置4存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}SoU+9iUDCDOCJjtWm7UaE7Nb7Pe8TckWcXPZuj5tAHE=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置5存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}P84n5ZLtW3tQeeUJeZTwLpsCtLt7ilfkiXxahBrQFmo=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置7存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}hFE2iNV5kK2VK4Ttl4uVL1nm5RH0Z1EDSp7AnlPBhKc=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置8存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}as3Mm1PkiTv4IGI8fW14sw3UFTEfv0zPj7hxdgvidwc=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#挂载灾备柜面前置9存储盘
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}/NI6lYf/J54Ab4VUcbYCSSq6tUBAq31tE9pEURjmbRo=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#新信贷ZB挂载CC_曹畅丁健10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}ixboSV4x2F9HdRbbLKAtnR1gMROUGWJ9IH3lxCa2fuk=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "新信贷灾备挂载存储盘"
+ RECOVERY STOP
+
+
+DA1#无线固话POS业务验证
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}Jb8bHQ4cb2rQGWGvXio51JuyfH5thGX76RikC+okAiY=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "无线固话POS业务验证"
+ RECOVERY STOP
+
+
+DA1#普通
+ DOCOMMAND "sleep 200"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#普通2
+ DOCOMMAND "sleep 20"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#暂停指纹存储复制_钱小强40M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#暂停新信贷CC_周猛军陈天舒40M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}TqXlGHprrNCKu8G2GWmaAzUQE+nMjst/NHkZNaNrAUo=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "暂停新信贷存储"
+ RECOVERY STOP
+
+
+DA1#暂停柜面存储复制_钱小强40M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#暂停柜面存储复制_钱小强40M_2
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>df</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.2.128.76</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>ssh</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}sA0Vj9m50GG4RV/dOdzYY9EXEbnHo/ql2AGYSwQ4DIo=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "Added by composer."
+ RECOVERY STOP
+
+
+DA1#暂停核心存储复制_周猛军40M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#服务器及系统检查_周猛军30M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#服务器及系统检查_周猛军曹畅
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#柜面前置业务验证
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}nR5W+cPgCiCOescVhvaa1H/5tm6jxF7U5hVo8y1u1uA=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "柜面前置业务验证"
+ RECOVERY STOP
+
+
+DA1#检1服务器_周猛军曹畅钱小强
+ DOCOMMAND "sleep 1800"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#检查交易路由2ZB_刘军桑晓东30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}NyPs+We/KKHo/sjMF116yr2Ol+7f4Ftdz18FM53cfEE=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "检查交易路由2.0灾备应用"
+ RECOVERY STOP
+
+
+DA1#检查加密平台ZB_刘军桑晓东30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}s2wjifFvVgbAmh7l/WjZvWSE5p6hX/4IMy1m6vcPwAo=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "检查加密平台灾备应用"
+ RECOVERY STOP
+
+
+DA1#检查新信贷ZB_吴俊丰胡鹏30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}uyM8AgFrNqmFfPhOXOQ/fqC02IZksfOVNxmB8zcFT2s=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "检查新信贷灾备应用版本"
+ RECOVERY STOP
+
+
+DA1#检查柜面前置DR_刘军桑晓东30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 50</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}Yzm0W7X4Ukhzv53OH42mEnlt7pqzZmyo9DRZWXB6FQM=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "检查柜面前置灾备应用版本"
+ RECOVERY STOP
+
+
+DA1#检查核心DR版本_刘军桑晓东30M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 50</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}IUGSfHfPeYiuSE94amLIf5VWanhEQYqzvfPcUFf11f0=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "检查核心灾备应用版本"
+ RECOVERY STOP
+
+
+DA1#演练开始
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}MPsnPJCv9HKTGdyli77hAiceMKSCyc82jvrXlSipOxI=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "演练开始"
+ RECOVERY STOP
+
+
+DA1#演练开始8
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}7eJAjyxGG7+cWsG+Czsw0iMlpb8xlkfKb4gHaaY5+t4=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "演练开始"
+ RECOVERY STOP
+
+
+DA1#演练结束
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+			<jsdlremotecommand:RemoteCommandParameters>
+				<jsdlremotecommand:taskPanel>
+					<jsdlremotecommand:command>sleep 5</jsdlremotecommand:command>
+				</jsdlremotecommand:taskPanel>
+				<jsdlremotecommand:environmentPanel>
+					<jsdlremotecommand:standardOutput/>
+					<jsdlremotecommand:standardError/>
+				</jsdlremotecommand:environmentPanel>
+				<jsdlremotecommand:serverPanel>
+					<jsdlremotecommand:serverInfo>
+						<jsdlremotecommand:serverName>127.0.0.1</jsdlremotecommand:serverName>
+						<jsdlremotecommand:port/>
+						<jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+					</jsdlremotecommand:serverInfo>
+					<jsdlremotecommand:credentials>
+						<jsdl:userName>root</jsdl:userName>
+						<jsdl:password>{aes}FibIpOXQPvKlulSGsKDy5ZgqLhX30SOCHss9IHnqm8Q=</jsdl:password>
+					</jsdlremotecommand:credentials>
+					<jsdlremotecommand:certificates>
+						<jsdlremotecommand:keystoreFilePath/>
+						<jsdlremotecommand:password/>
+					</jsdlremotecommand:certificates>
+				</jsdlremotecommand:serverPanel>
+			</jsdlremotecommand:RemoteCommandParameters>
+		</jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "演练结束"
+ RECOVERY STOP
+
+
+DA1#激活灾备网络_杨明10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}w+U8EaZ7lAQSD54tjFgpZr9uaLuHYTHiN64B8Evky8s=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "激活灾备网络"
+ RECOVERY STOP
+
+
+DA1#激活灾备网络_王军10M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}w+U8EaZ7lAQSD54tjFgpZr9uaLuHYTHiN64B8Evky8s=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "激活灾备网络"
+ RECOVERY STOP
+
+
+DA1#激活灾备网络设置_张振华10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#激活灾备网络设置_王军10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备业务验证_高艳25M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备业务验证_龚本清25M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备到生产网络回切_张振华20M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备到生产网络回切_王军20M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备应用版本检查_桑晓东30M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备应用版本检查_桑晓东刘军
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备指纹挂存储盘_钱小强10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备柜面挂存储盘_钱小强10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#灾备柜面挂载存储盘
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#生产业务验证_高艳25M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#生产业务验证_龚本清25M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#生产网络回切_杨明20M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pzik1bjDVa7+OkDbWujPFHEw/pSb92WIQC3lIyvqiGs=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "生产网络回切 启动3G"
+ RECOVERY STOP
+
+
+DA1#生产网络回切_王军20M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 20</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}pzik1bjDVa7+OkDbWujPFHEw/pSb92WIQC3lIyvqiGs=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "生产网络回切 启动3G"
+ RECOVERY STOP
+
+
+DA1#短信通知演练结束_王漫5M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#短信通知灾备业务验证_王漫5M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#短信通知生产业务验证_王漫5M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#短信通知零时开始切换_王漫10M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#网络状态健康检查_张振华30M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#网络状态健康检查_王军30M
+ DOCOMMAND "sleep 10"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DA1#行社业务验证_高艳35M
+ TASK
+    <?xml version="1.0" encoding="UTF-8"?>
+<jsdl:jobDefinition xmlns:jsdl="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdl" xmlns:jsdlremotecommand="http://www.ibm.com/xmlns/prod/scheduling/1.0/jsdlremotecommand" name="REMOTECOMMAND">
+  <jsdl:application name="remotecommand">
+    <jsdlremotecommand:remotecommand>
+   <jsdlremotecommand:RemoteCommandParameters>
+    <jsdlremotecommand:taskPanel>
+     <jsdlremotecommand:command>sleep 10</jsdlremotecommand:command>
+    </jsdlremotecommand:taskPanel>
+    <jsdlremotecommand:environmentPanel>
+     <jsdlremotecommand:standardOutput/>
+     <jsdlremotecommand:standardError/>
+    </jsdlremotecommand:environmentPanel>
+    <jsdlremotecommand:serverPanel>
+     <jsdlremotecommand:serverInfo>
+      <jsdlremotecommand:serverName>10.0.244.32</jsdlremotecommand:serverName>
+      <jsdlremotecommand:port/>
+      <jsdlremotecommand:protocol>auto</jsdlremotecommand:protocol>
+     </jsdlremotecommand:serverInfo>
+     <jsdlremotecommand:credentials>
+      <jsdl:userName>root</jsdl:userName>
+      <jsdl:password>{aes}z1rkZ9KW94CGg98Nyrzodz60VBk+jGxZP3l3yjz6d3Y=</jsdl:password>
+     </jsdlremotecommand:credentials>
+     <jsdlremotecommand:certificates>
+      <jsdlremotecommand:keystoreFilePath/>
+      <jsdlremotecommand:password/>
+     </jsdlremotecommand:certificates>
+    </jsdlremotecommand:serverPanel>
+   </jsdlremotecommand:RemoteCommandParameters>
+  </jsdlremotecommand:remotecommand>
+  </jsdl:application>
+</jsdl:jobDefinition>
+ DESCRIPTION "行社业务验证"
+ RECOVERY STOP
+
+
+DRPMSSVR#CHECKSYNC
+ DOCOMMAND "/opt/IBM/TWA/TWS/bin/planman checksync"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer for job stream: DRPMSSVR#FINALPOSTREPORTS."
+ TASKTYPE UNIX
+ RECOVERY CONTINUE
+
+
+DRPMSSVR#CREATEPOSTREPORTS
+ SCRIPTNAME "/opt/IBM/TWA/TWS/CreatePostReports"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer for job stream: DRPMSSVR#FINALPOSTREPORTS."
+ TASKTYPE UNIX
+ RECOVERY CONTINUE
+
+
+DRPMSSVR#MAKEPLAN
+ SCRIPTNAME "/opt/IBM/TWA/TWS/MakePlan"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer for job stream: DRPMSSVR#FINAL."
+ TASKTYPE UNIX
+ RCCONDSUCC "(RC=0) OR (RC=4)"
+ RECOVERY STOP
+
+
+DRPMSSVR#STARTAPPSERVER
+ SCRIPTNAME "/opt/IBM/TWA/TWS/../wastools/startWas.sh"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer for job stream: DRPMSSVR#FINAL."
+ TASKTYPE UNIX
+ RECOVERY CONTINUE
+
+
+DRPMSSVR#SWITCHPLAN
+ SCRIPTNAME "/opt/IBM/TWA/TWS/SwitchPlan"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer for job stream: DRPMSSVR#FINAL."
+ TASKTYPE UNIX
+ RECOVERY STOP
+
+
+DRPMSSVR#UPDATESTATS
+ SCRIPTNAME "/opt/IBM/TWA/TWS/UpdateStats"
+ STREAMLOGON twsuser
+ DESCRIPTION "Added by composer for job stream: DRPMSSVR#FINALPOSTREPORTS."
+ TASKTYPE UNIX
+ RECOVERY CONTINUE
+
+

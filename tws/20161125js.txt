@@ -1,0 +1,315 @@
+SCHEDULE DA1#DRP2016 
+PRIORITY GO
+:
+DA1#演练开始
+ CONFIRMED
+ PRIORITY GO
+
+DA1#演练结束
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 完成备份灾备系统数据
+
+DA1#短信通知零时开始切换_王漫10M
+ SCHEDTIME 2349 
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 完成检查工作
+
+DA1#切断生产广域网_王军10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 完成暂停存储复制
+
+DA1#激活灾备网络设置_王军10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 切断生产广域网_王军10M
+
+DA1#短信通知灾备业务验证_王漫5M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 发布灾备核心服务IP_周猛军10M
+
+DA1#灾备到生产网络回切_王军20M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 启动3G_王军5M
+
+DA1#灾备业务验证_龚本清25M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 短信通知灾备业务验证_王漫5M
+
+DA1#短信通知生产业务验证_王漫5M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 完成启动生产应用
+
+DA1#生产业务验证_龚本清25M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 短信通知生产业务验证_王漫5M
+
+DA1#短信通知演练结束_王漫5M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 生产业务验证_龚本清25M
+
+DA1#完成卸载并人工核查_钱小强5M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 卸载灾备指纹登录存储盘
+ FOLLOWS 卸载灾备柜面前置10存储盘
+ FOLLOWS 卸载灾备柜面前置1存储盘
+ FOLLOWS 卸载灾备柜面前置4存储盘
+ FOLLOWS 卸载灾备柜面前置5存储盘
+ FOLLOWS 卸载灾备柜面前置7存储盘
+ FOLLOWS 卸载灾备柜面前置8存储盘
+ FOLLOWS 卸载灾备柜面前置9存储盘
+
+DA1#恢复核心存储复制_周猛军10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始恢复存储复制
+
+DA1#暂停核心存储复制_周猛军40M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始暂停存储复制
+
+DA1#暂停柜面存储复制_钱小强40M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始暂停存储复制
+
+DA1#发布灾备核心服务IP_周猛军10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 完成启动灾备应用
+
+DA1#卸载灾备柜面前置存储盘
+ PRIORITY GO
+ FOLLOWS 完成停止灾备应用
+
+DA1#卸载灾备柜面前置1存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#恢复柜面存储复制_钱小强10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始恢复存储复制
+
+DA1#备份灾备核心数据_桑晓东10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始备份灾备系统数据
+
+DA1#完成检查工作
+ PRIORITY GO
+ FOLLOWS 主机及存储健康检查_周猛军30M
+ FOLLOWS 灾备应用版本检查_桑晓东30M
+ FOLLOWS 网络状态健康检查_王军30M
+
+DA1#停生产ATMP应用_桑晓东10M
+ SCHEDTIME 2359 
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 短信通知零时开始切换_王漫10M
+
+DA1#开始暂停存储复制
+ PRIORITY GO
+ FOLLOWS 停生产ATMP应用_桑晓东10M
+
+DA1#完成暂停存储复制
+ PRIORITY GO
+ FOLLOWS 暂停指纹存储复制_钱小强40M
+ FOLLOWS 暂停柜面存储复制_钱小强40M
+ FOLLOWS 暂停核心存储复制_周猛军40M
+
+DA1#开始启动灾备应用
+ PRIORITY GO
+ FOLLOWS 完成挂载并人工核查_钱小强5M
+
+DA1#完成启动灾备应用
+ PRIORITY GO
+ FOLLOWS 启动灾备指纹登录应用_胡鹏20M
+ FOLLOWS 启动灾备柜面前置应用_刘军20M
+ FOLLOWS 启动灾备核心应用_桑晓东20M
+
+DA1#开始启动生产应用
+ PRIORITY GO
+ FOLLOWS 灾备到生产网络回切_王军20M
+
+DA1#完成启动生产应用
+ PRIORITY GO
+ FOLLOWS 启动生产ATMP应用_桑晓东10M
+ FOLLOWS 启动生产指纹登录应用_胡鹏10M
+ FOLLOWS 启动生产柜面前置应用_刘军10M
+
+DA1#开始停止灾备应用
+ PRIORITY GO
+ FOLLOWS 短信通知演练结束_王漫5M
+
+DA1#完成停止灾备应用
+ PRIORITY GO
+ FOLLOWS 停止灾备指纹登录应用_胡鹏15M
+ FOLLOWS 停止灾备柜面前置应用_刘军15M
+ FOLLOWS 停止灾备核心应用_桑晓东15M
+
+DA1#卸载灾备柜面前置10存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#卸载灾备柜面前置4存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#卸载灾备柜面前置7存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#卸载灾备柜面前置8存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#启动灾备柜面前置应用_刘军20M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始启动灾备应用
+
+DA1#启动灾备核心应用_桑晓东20M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始启动灾备应用
+
+DA1#启动生产柜面前置应用_刘军10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始启动生产应用
+
+DA1#启动生产ATMP应用_桑晓东10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始启动生产应用
+
+DA1#停止灾备核心应用_桑晓东15M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始停止灾备应用
+
+DA1#停止灾备柜面前置应用_刘军15M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始停止灾备应用
+
+DA1#卸载灾备柜面前置5存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#卸载灾备柜面前置9存储盘
+ PRIORITY GO
+ FOLLOWS 卸载灾备柜面前置存储盘
+
+DA1#开始恢复存储复制
+ PRIORITY GO
+ FOLLOWS 完成卸载并人工核查_钱小强5M
+
+DA1#完成恢复存储复制
+ PRIORITY GO
+ FOLLOWS 恢复指纹存储复制_钱小强10M
+ FOLLOWS 恢复柜面存储复制_钱小强10M
+ FOLLOWS 恢复核心存储复制_周猛军10M
+
+DA1#开始备份灾备系统数据
+ PRIORITY GO
+ FOLLOWS 完成恢复存储复制
+
+DA1#备份灾备柜面前置数据_刘军10M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 开始备份灾备系统数据
+
+DA1#完成备份灾备系统数据
+ PRIORITY GO
+ FOLLOWS 备份灾备柜面前置数据_刘军10M
+ FOLLOWS 备份灾备核心数据_桑晓东10M
+
+DA1#灾备应用版本检查_桑晓东30M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 演练开始
+
+DA1#网络状态健康检查_王军30M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 演练开始
+
+DA1#主机及存储健康检查_周猛军30M
+ CONFIRMED
+ PRIORITY GO
+ FOLLOWS 演练开始
+
+DA1#暂停指纹存储复制_钱小强40M
+ FOLLOWS 开始暂停存储复制
+
+DA1#灾备指纹挂存储盘_钱小强10M
+ FOLLOWS 开始挂载存储盘
+
+DA1#启动灾备指纹登录应用_胡鹏20M
+ FOLLOWS 开始启动灾备应用
+
+DA1#启动生产指纹登录应用_胡鹏10M
+ FOLLOWS 开始启动生产应用
+
+DA1#停止灾备指纹登录应用_胡鹏15M
+ FOLLOWS 开始停止灾备应用
+
+DA1#恢复指纹存储复制_钱小强10M
+ FOLLOWS 开始恢复存储复制
+
+DA1#卸载灾备指纹登录存储盘
+ FOLLOWS 完成停止灾备应用
+
+DA1#开始挂载存储盘
+ FOLLOWS 激活灾备网络设置_王军10M
+
+DA1#灾备柜面挂载存储盘
+ FOLLOWS 开始挂载存储盘
+
+DA1#挂载灾备柜面前置10存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#挂载灾备柜面前置1存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#挂载灾备柜面前置4存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#挂载灾备柜面前置5存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#挂载灾备柜面前置7存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#挂载灾备柜面前置8存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#挂载灾备柜面前置9存储盘
+ FOLLOWS 灾备柜面挂载存储盘
+
+DA1#完成挂载并人工核查_钱小强5M
+ FOLLOWS 挂载灾备柜面前置10存储盘
+ FOLLOWS 挂载灾备柜面前置1存储盘
+ FOLLOWS 挂载灾备柜面前置4存储盘
+ FOLLOWS 挂载灾备柜面前置5存储盘
+ FOLLOWS 挂载灾备柜面前置7存储盘
+ FOLLOWS 挂载灾备柜面前置8存储盘
+ FOLLOWS 挂载灾备柜面前置9存储盘
+
+DA1#启动3G_王军5M
+ CONFIRMED
+ FOLLOWS 灾备业务验证_龚本清25M
+END
+

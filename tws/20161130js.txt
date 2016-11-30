@@ -1,0 +1,157 @@
+SCHEDULE DA1#DRP2016DRP 
+:
+DA1#场景一介绍
+ CONFIRMED
+
+DA1#发现告警值班员报告
+ CONFIRMED
+ FOLLOWS 场景一介绍
+
+DA1#网络管理员响应
+ CONFIRMED
+ FOLLOWS 发现告警值班员报告
+
+DA1#应用管理员响应
+ CONFIRMED
+ FOLLOWS 发现告警值班员报告
+
+DA1#系统管理员响应
+ CONFIRMED
+ FOLLOWS 发现告警值班员报告
+
+DA1#运行支持部门
+ CONFIRMED
+ FOLLOWS 发现告警值班员报告
+
+DA1#网络检查结果
+ CONFIRMED
+ FOLLOWS 网络管理员响应
+
+DA1#应用检查结果
+ CONFIRMED
+ FOLLOWS 应用管理员响应
+
+DA1#系统检查结果
+ CONFIRMED
+ FOLLOWS 系统管理员响应
+
+DA1#检查结果汇总分析
+ CONFIRMED
+ FOLLOWS 应用检查结果
+ FOLLOWS 系统检查结果
+ FOLLOWS 网络检查结果
+ FOLLOWS 运行支持部门
+
+DA1#网络紧急处置结果
+ CONFIRMED
+ FOLLOWS 检查结果汇总分析
+
+DA1#应用紧急处置结果
+ CONFIRMED
+ FOLLOWS 检查结果汇总分析
+
+DA1#系统紧急处置结果
+ CONFIRMED
+ FOLLOWS 检查结果汇总分析
+
+DA1#生产运行应急分析会议
+ CONFIRMED
+ FOLLOWS 应用紧急处置结果
+ FOLLOWS 系统紧急处置结果
+ FOLLOWS 网络紧急处置结果
+
+DA1#突发事件上报信息中心总经理
+ CONFIRMED
+ FOLLOWS 生产运行应急分析会议
+
+DA1#场景二介绍
+ CONFIRMED
+ FOLLOWS 突发事件上报信息中心总经理
+
+DA1#应用管理部问题排查及应急处
+ CONFIRMED
+ FOLLOWS 场景二介绍
+
+DA1#资源保障部问题排查及应急处
+ CONFIRMED
+ FOLLOWS 场景二介绍
+
+DA1#处置结果汇总分析
+ CONFIRMED
+ FOLLOWS 应用管理部问题排查及应急处
+ FOLLOWS 资源保障部问题排查及应急处
+
+DA1#突发事件上报省联社分管领导
+ CONFIRMED
+ FOLLOWS 处置结果汇总分析
+
+DA1#安排事件上报
+ CONFIRMED
+ FOLLOWS 突发事件上报省联社分管领导
+
+DA1#突发事件上报安徽银监会
+ CONFIRMED
+ FOLLOWS 安排事件上报
+
+DA1#场景三介绍
+ CONFIRMED
+ FOLLOWS 突发事件上报安徽银监会
+
+DA1#下达组建联合应急小组命令
+ CONFIRMED
+ FOLLOWS 场景三介绍
+
+DA1#上报组件联合应急小组
+ CONFIRMED
+ FOLLOWS 下达组建联合应急小组命令
+
+DA1#上报组件联合应急小组2
+ CONFIRMED
+ FOLLOWS 上报组件联合应急小组
+
+DA1#汇报问题原因及暂定措施
+ CONFIRMED
+ FOLLOWS 上报组件联合应急小组2
+
+DA1#场景四介绍
+ CONFIRMED
+ FOLLOWS 汇报问题原因及暂定措施
+
+DA1#汇报问题原因及暂定措施2
+ CONFIRMED
+ FOLLOWS 场景四介绍
+
+DA1#场景五介绍
+ CONFIRMED
+ FOLLOWS 汇报问题原因及暂定措施2
+
+DA1#汇报问题分析原因
+ CONFIRMED
+ FOLLOWS 场景五介绍
+
+DA1#场景六介绍
+ CONFIRMED
+ FOLLOWS 汇报问题分析原因
+
+DA1#网络管理员报告测试结果
+ CONFIRMED
+ FOLLOWS 场景六介绍
+
+DA1#应用管理员报告测试结果
+ CONFIRMED
+ FOLLOWS 场景六介绍
+
+DA1#汇报测试结果
+ CONFIRMED
+ FOLLOWS 应用管理员报告测试结果
+ FOLLOWS 网络管理员报告测试结果
+
+DA1#汇报测试结果2
+ CONFIRMED
+ FOLLOWS 汇报测试结果
+
+DA1#场景七介绍
+ CONFIRMED
+ FOLLOWS 汇报测试结果2
+END
+

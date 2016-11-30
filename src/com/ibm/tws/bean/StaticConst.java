@@ -7,8 +7,8 @@ import java.util.Map;
 
 public class StaticConst
 {
- // public static final String SchedulingFactoryProxyUrl ="http://10.0.244.32:31115/PlanServicesWeb/services/SchedulingFactory";
-  public static final String SchedulingFactoryProxyUrl ="http://127.0.0.1:31115/PlanServicesWeb/services/SchedulingFactory";
+  public static final String SchedulingFactoryProxyUrl ="http://10.0.244.32:31115/PlanServicesWeb/services/SchedulingFactory";
+//  public static final String SchedulingFactoryProxyUrl ="http://127.0.0.1:31115/PlanServicesWeb/services/SchedulingFactory";
   public static final String username = "twsuser";
   public static final String password = "passw0rd";
   public static final String job_stream_name = "DRP2016DRP";
