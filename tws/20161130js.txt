@@ -19,7 +19,7 @@ DA1#系统管理员响应
  CONFIRMED
  FOLLOWS 发现告警值班员报告
 
-DA1#运行支持部门
+DA1#运行支持部门经理响应
  CONFIRMED
  FOLLOWS 发现告警值班员报告
 
@@ -40,7 +40,7 @@ DA1#检查结果汇总分析
  FOLLOWS 应用检查结果
  FOLLOWS 系统检查结果
  FOLLOWS 网络检查结果
- FOLLOWS 运行支持部门
+ FOLLOWS 运行支持部门经理响应
 
 DA1#网络紧急处置结果
  CONFIRMED

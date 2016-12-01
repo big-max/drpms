@@ -4491,7 +4491,7 @@ DA1#资源保障部问题排查及应急处
  RECOVERY STOP
 
 
-DA1#运行支持部门
+DA1#运行支持部门经理响应
  DOCOMMAND "sleep 5"
  STREAMLOGON twsuser
  TASKTYPE UNIX
